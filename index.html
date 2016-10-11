@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery plugin</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/jquery.selectBox.css"/>
+	<script type="text/javascript" src="script/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="script/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="script/jquery.selectBox.js"></script>
+	
+</head>
+<body>
+
+    <ul class="menu">
+    	<li><a href="#">Element 1</a></li>
+    	<li><a href="#">Element 2</a></li>
+    	<li class="dropdown-menu"><a href="#">Element 3</a>
+    		<ul class="submenu">
+    			<li><a href="#">Element 3.1</a></li>
+    			<li><a href="#">Element 3.2</a></li>
+    			<li class="dropdown-menu"><a href="#">Element 3.3</a>
+    				<ul class="submenu">
+		    			<li><a href="#">Element 3.3.1</a></li>
+		    			<li><a href="#">Element 3.3.2</a></li>
+		    			<li><a href="#">Element 3.3.3</a></li>
+		    			<li class="dropdown-menu"><a href="#">Element 3.3.4</a>
+		    				<ul class="submenu">
+				    			<li><a href="#">Element 3.3.4.1</a></li>
+				    			<li><a href="#">Element 3.3.4.2</a></li>
+				    			<li><a href="#">Element 3.3.4.3</a></li>
+				    			<li><a href="#">Element 3.3.4.4</a></li>
+    						</ul>
+		    			</li>
+    				</ul>
+    			</li>
+    			<li><a href="#">Element 3.4</a></li>
+    		</ul>
+    	</li>
+    	<li><a href="#">Element 4</a></li>
+    	<li><a href="#">Element 5</a></li>
+    </ul>
+
+	<div class="wraper-jcarousel">
+		<div class="jcarousel">
+		    <ul>
+			    <li><img src="img/img1.jpg" alt=""></li>
+                <li><img src="img/img2.jpg" alt=""></li>
+                <li><img src="img/img3.jpg" alt=""></li>
+                <li><img src="img/img4.jpg" alt=""></li>
+                <li><img src="img/img5.jpg" alt=""></li>
+		    </ul>
+		</div>
+		
+        <a href="#" class="jcarousel-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-next">&rsaquo;</a>
+             
+        <div class="jcarousel-pagination">
+                    
+        </div>
+	</div>
+
+	<div class="select">
+		<p>jQuery Select Box Plugin</p>
+		<select>
+	        <optgroup label="Section 1">
+	            <option value="1">Item 1</option>
+	            <option value="2">Item 2</option>
+	            <option value="3">Item 3</option>
+	            <option value="4">Item 4</option>
+	        </optgroup>
+	        <optgroup label="Section 2">
+	            <option value="5">Item 5</option>
+	            <option value="6">Item 6</option>
+	            <option value="7">Item 7</option>
+                <option value="8">Item 8</option>
+	        </optgroup>
+	        <optgroup label="Section 3">
+	            <option value="9">Item 9</option>
+	            <option value="10">Item 10</option>
+	            <option value="11">Item 11</option>
+	            <option value="12">Item 12</option>
+	        </optgroup>
+	        <optgroup label="Section 4">
+	     	    <option value="13">Item 13</option>
+                <option value="14">Item 14</option>
+	            <option value="15">Item 15</option>
+	            <option value="16">Item 16</option>
+	        </optgroup>
+	    </select>
+	</div>
+
+
+	<div class="checkbox-jquery">
+		<p>Checkbox-jquery</p>
+        <form action="" name="form" method="get">
+	        <div>
+	            <span>
+	            	<input type="checkbox" class="check" id="checkbox1" name="checkbox1" value="">
+	            </span>
+	            <label for id="checkbox1">First checkbox</label>
+	        </div>
+	            
+	        <div>
+	         	<span>
+	            	<input type="checkbox" class="check" id="checkbox2" name="checkbox2" value="" checked="">
+	            </span>
+	            <label for id="checkbox2">Second checkbox</label>
+	        </div>
+	        <div>
+	         	<span>
+	            	<input type="checkbox" class="check" id="checkbox2" name="checkbox2" value="" disabled="">
+	            </span>
+	            <label for id="checkbox2">Disabled checkbox</label>
+	        </div>
+
+	        <div>
+	         	<span>
+	            	<input type="checkbox" class="check" id="checkbox2" name="checkbox2" value="" disabled="" checked="">
+	            </span>
+	            <label for id="checkbox2">Disabled checked checkbox</label>
+	        </div>
+        </form>
+    </div>
+
+    <div class="checkbox-css">
+    	<p>Checkbox-css</p>
+	    <input id="checkbox2_1" type="checkbox" name="checkbox2_1" value="">
+	    <label for="checkbox2_1">First checkbox</label>
+	    <br>
+	    <input id="checkbox2_2" type="checkbox" name="check" value="" checked="">
+	    <label for="checkbox2_2">Second checkbox</label>
+	    <br>
+	    <input id="checkbox2_3" type="checkbox" name="check" value="" disabled="">
+	    <label for="checkbox2_3">Disabled checkbox</label>
+	    <br>
+	    <input id="checkbox2_4" type="checkbox" name="check" value="" disabled="" checked="">
+	    <label for="checkbox2_4">Disabled checked checkbox</label>
+    </div>
+	<script type="text/javascript" src="script/task.js"></script>
+</body>
+</html>

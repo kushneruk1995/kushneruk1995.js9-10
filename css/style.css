@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+}
+
+.wraper-jcarousel {
+    width: 600px;
+    height: 400px;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    border: 1px solid #b94e58;
+    border-radius: 5px;
+    position: relative;
+    background: #fef5ee;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+}
+
+.jcarousel ul {
+    width: 2000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel img {
+	width: 600px;
+	height: 400px;
+}
+
+.jcarousel-prev,
+.jcarousel-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #b94e58;
+    color: #fef5ee;
+    text-decoration: none;
+    font: 24px Arial;
+}
+
+.jcarousel-prev {
+    left: -50px;
+}
+
+.jcarousel-next {
+    right: -50px;
+}
+
+.jcarousel-prev.inactive,
+.jcarousel-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #f7e1d0;
+    border-radius: 15px;
+    margin-right: 5px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #b94e58;
+}
+
+.select {
+	width: 200px;
+	margin: 20px auto;
+}
+
+.select p,
+.checkbox-jquery p,
+.checkbox-css p {
+	text-align: center;
+	font-size: 18px;
+	color: #b94e58;
+	font-weight: bold;
+}
+
+form,
+label {
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.menu {
+    width: 100%;
+    background: rgba(185, 78, 88, 0.8);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fef5ee;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.menu li ul {
+    top: 20px;
+    position: absolute;
+}
+
+.submenu {
+    display: none;
+    background: rgba(185, 78, 88, 1);
+    padding: 0;
+    width: 170px;
+    z-index: 1;
+}
+
+.submenu li {
+    display: block;
+    padding: 10px 15px;
+    padding-right: 0;
+    width: 100%;
+}
+
+.submenu li a {
+    padding: 10px 15px 10px 2px;
+    border-bottom:solid 1px #fef5ee;
+}
+
+.submenu li li a {
+    border-bottom:solid 1px #fef5ee;
+}
+
+.menu li li ul {
+    top:0;
+    left: 170px; 
+}
+
+.dropdown-menu:after { 
+    content: ''; 
+    float: right;
+    margin-left: 0px;
+    margin-top: 6px; 
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 7px solid #fff;
+    transition: .2s;
+}
+
+.dropdown-menu:hover:after {
+    transform: rotate(180deg);
+}
+
+li li.dropdown-menu:after {
+    content: ''; 
+    float: right;
+    margin-right: 40px;
+    margin-top: 6px; 
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 7px solid #fff;
+    transition: .2s;
+}
+
+.dropdown-menu:hover:after {
+    transform: rotate(180deg);
+}
+
+.checkbox-jquery,
+.checkbox-css {
+    width: 255px;
+    margin: 15px auto;
+}
+
+.check {
+    display: none;
+}
+
+.checkbox-unchecked,
+.checkbox-checked,
+.checkbox-disabled,
+.checkbox-disabled__checked {
+    background: url(../img/checkbox1.png) no-repeat top left;
+    width: 11px;
+    height: 22px;
+    padding-left: 17px;
+    border: 0;
+    float: left;
+    display: block;
+}
+
+.checkbox-unchecked {
+    background-position: -27px -45px;
+}
+
+.checkbox-checked {
+    background-position: -27px -78px;
+}
+
+.checkbox-disabled {
+    background-position: -27px -111px;
+}
+
+.checkbox-disabled__checked {
+    background-position: -27px -144px;
+}
+
+.checkbox-css input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-css input[type="checkbox"] + label {
+    background: url(../img/checkbox1.png) no-repeat top left;
+    background-position: -27px -45px;
+    padding-left: 25px;
+}
+
+.checkbox-css input[type="checkbox"]:checked + label {
+    background: url(../img/checkbox1.png) no-repeat top left;
+    background-position: -27px -78px;
+}
+
+.checkbox-css input[type="checkbox"]:disabled + label {
+    background: url(../img/checkbox1.png) no-repeat top left;
+    background-position: -27px -111px;
+}
+
+.checkbox-css input[type="checkbox"]:disabled:checked + label {
+    background: url(../img/checkbox1.png) no-repeat top left;
+    background-position: -27px -144px;
+}
+
